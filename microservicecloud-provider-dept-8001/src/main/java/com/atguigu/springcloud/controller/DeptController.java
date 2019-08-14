@@ -35,7 +35,7 @@ public class DeptController
   @RequestMapping(value="/dept/list",method=RequestMethod.GET)
   public List<Dept> list()
   {
-   return service.list();
+   return service.list().subList(0, 1);
   }
   
   @Autowired

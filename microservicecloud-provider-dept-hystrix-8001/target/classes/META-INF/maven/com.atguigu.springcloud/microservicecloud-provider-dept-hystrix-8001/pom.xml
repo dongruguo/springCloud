@@ -8,9 +8,7 @@
    <artifactId>microservicecloud</artifactId>
    <version>0.0.1-SNAPSHOT</version>
   </parent>
- 
   <artifactId>microservicecloud-provider-dept-hystrix-8001</artifactId>
- 
  
   <dependencies>
    <!--  hystrix -->

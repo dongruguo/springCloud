@@ -18,7 +18,7 @@ public class DeptController
   private DeptService service ;
   
   @RequestMapping(value="/dept/get/{id}",method=RequestMethod.GET)
-    @HystrixCommand(fallbackMethod = "processHystrix_Get")
+  @HystrixCommand(fallbackMethod = "processHystrix_Get")
   public Dept get(@PathVariable("id") Long id)
   {
    Dept dept =  this.service.get(id);

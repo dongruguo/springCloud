@@ -13,6 +13,12 @@ eureka:
     instance-id: gateway-9527.com
     prefer-ip-address: true 
 
+zuul:
+  ignored-services: microservicecloud-dept 
+  routes:
+     mydept.serviceId: microservicecloud-dept
+     mydept.path: /mydept/**
+
 
 info:
   app.name: atguigu-microcloud
